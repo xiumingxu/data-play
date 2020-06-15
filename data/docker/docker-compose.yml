@@ -1,0 +1,21 @@
+version : '3'
+services:
+  # springboot 项目
+  boot-project:
+    environment:
+        TZ: Asia/Shanghai
+        LANG: en_US.UTF-8
+        LANGUAGE: en_US:en
+        LC_ALL: en_US.UTF-8
+    build: .
+    ports:
+      - "8080:8080"
+    links: ["redis-server:redis"]
+
+  
+  # redis server 
+  redis-server:
+    image: redis:latest
+    hostname: "redis"
+    ports:
+      - "6379:6379"

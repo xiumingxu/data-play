@@ -1,0 +1,38 @@
+    4  ls
+    5  cd home
+    6  ls
+    7  cd xx
+    8  ls
+    9  which test.txt
+   10  ll
+   11  cd /
+   12  ls
+   13  ll
+   14  lsmod | grep vbox
+   15  ll
+   16  sudo mkdir vbox_add
+   17  sudo mount /dev/cdrom /media/vbox_add
+   18  cd vbox_add
+   19  ls
+   20  sudo ./VBoxLinuxAdditions.run
+   21  lsmod | grep vbox
+   22  ls
+   23  cd ../
+   24  ls
+   25  sudo mkdir test1
+   26  sudo mkdir data
+   27  history
+   28  cd /media
+   29  sudo mount -t vboxsf data /media/data
+   30  ls
+   31  cd data
+   32  ls
+   33  history > folderShareProcess.txt
+   34  sudo history > folderShareProcess.txt
+   35  touch folderShare.txt
+   36  sudo touch folderShare.txt
+   37  sudo history > folderShare.txt
+   38  sudo history >
+   39  sudo history > test.txt
+   40  ls
+   41  history > history_for_print.txt\n
